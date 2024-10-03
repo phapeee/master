@@ -1,0 +1,4 @@
+<launch>
+	<node name="master" pkg="master" type="master" output="screen" />
+	<node name="keyboard" pkg="keyboard" type="keyboard" output="screen" />
+</launch>

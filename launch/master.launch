@@ -1,4 +1,9 @@
 <launch>
 	<node name="master" pkg="master" type="master" output="screen" />
+	<!-- 
 	<node name="keyboard" pkg="keyboard" type="keyboard" output="screen" />
+	-->
+	<node name="joy" pkg="joy" type="joy_node" output="screen" />
+	<node name="mobile_ik" pkg="mobile_ik" type="mobile_ik" output="screen" />
+	<node name="serial_node" pkg="rosserial_arduino" type="serial_node.py" output="screen" args="/dev/ttyACM0" />
 </launch>

@@ -10,6 +10,7 @@ project(master)
 find_package(catkin REQUIRED COMPONENTS
   keyboard
   roscpp
+  vector3
 )
 
 ## System dependencies are found with CMake's conventions
@@ -151,7 +152,8 @@ add_executable(master src/main.cpp)
 # )
 target_link_libraries(master
   ${catkin_LIBRARIES}
-)
+  vector3
+  )
 
 #############
 ## Install ##
